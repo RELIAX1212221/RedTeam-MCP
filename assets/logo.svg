@@ -1,0 +1,126 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" fill="none">
+  <defs>
+    <linearGradient id="outerRing" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff2020"/>
+      <stop offset="50%" style="stop-color:#ff4444"/>
+      <stop offset="100%" style="stop-color:#cc0000"/>
+    </linearGradient>
+    <linearGradient id="innerGlow" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#1a1a2e"/>
+      <stop offset="100%" style="stop-color:#0d0d1a"/>
+    </linearGradient>
+    <linearGradient id="shield" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#ff4444"/>
+      <stop offset="100%" style="stop-color:#cc0000"/>
+    </linearGradient>
+    <linearGradient id="circuit" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#ff6b6b;stop-opacity:0.6"/>
+      <stop offset="100%" style="stop-color:#ff4444;stop-opacity:0.2"/>
+    </linearGradient>
+    <filter id="glow">
+      <feGaussianBlur stdDeviation="4" result="coloredBlur"/>
+      <feMerge>
+        <feMergeNode in="coloredBlur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+    <filter id="innerShadow">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feOffset dx="0" dy="2"/>
+    </filter>
+    <filter id="dropShadow">
+      <feDropShadow dx="0" dy="4" stdDeviation="8" flood-color="#ff0000" flood-opacity="0.3"/>
+    </filter>
+  </defs>
+
+  <!-- Background circle with shadow -->
+  <circle cx="256" cy="256" r="248" fill="url(#innerGlow)" filter="url(#dropShadow)"/>
+  
+  <!-- Outer glowing ring -->
+  <circle cx="256" cy="256" r="240" fill="none" stroke="url(#outerRing)" stroke-width="6" opacity="0.9"/>
+  <circle cx="256" cy="256" r="232" fill="none" stroke="#ff4444" stroke-width="1" opacity="0.3"/>
+
+  <!-- Circuit board decorative lines -->
+  <g stroke="url(#circuit)" stroke-width="1.5" fill="none" opacity="0.4">
+    <!-- Left circuits -->
+    <path d="M80,200 L120,200 L120,170 L140,170"/>
+    <circle cx="140" cy="170" r="3" fill="#ff4444"/>
+    <path d="M80,260 L110,260 L110,290 L130,290"/>
+    <circle cx="130" cy="290" r="3" fill="#ff4444"/>
+    <path d="M100,320 L130,320 L130,340 L150,340"/>
+    <circle cx="150" cy="340" r="3" fill="#ff4444"/>
+    <!-- Right circuits -->
+    <path d="M432,200 L392,200 L392,170 L372,170"/>
+    <circle cx="372" cy="170" r="3" fill="#ff4444"/>
+    <path d="M432,260 L402,260 L402,290 L382,290"/>
+    <circle cx="382" cy="290" r="3" fill="#ff4444"/>
+    <path d="M412,320 L382,320 L382,340 L362,340"/>
+    <circle cx="362" cy="340" r="3" fill="#ff4444"/>
+    <!-- Top circuits -->
+    <path d="M220,70 L220,100 L200,100 L200,120"/>
+    <circle cx="200" cy="120" r="3" fill="#ff4444"/>
+    <path d="M292,70 L292,100 L312,100 L312,120"/>
+    <circle cx="312" cy="120" r="3" fill="#ff4444"/>
+  </g>
+
+  <!-- Shield body -->
+  <path d="M256,110 L360,160 L360,280 C360,340 310,390 256,410 C202,390 152,340 152,280 L152,160 Z" 
+        fill="url(#innerGlow)" stroke="url(#shield)" stroke-width="3" filter="url(#glow)"/>
+  
+  <!-- Shield inner border -->
+  <path d="M256,125 L348,170 L348,278 C348,332 302,378 256,396 C210,378 164,332 164,278 L164,170 Z" 
+        fill="none" stroke="#ff4444" stroke-width="1" opacity="0.4"/>
+
+  <!-- Crosshair / Target reticle -->
+  <g stroke="#ff4444" stroke-width="2" opacity="0.7" filter="url(#glow)">
+    <circle cx="256" cy="260" r="60" fill="none" stroke-dasharray="8,4"/>
+    <circle cx="256" cy="260" r="35" fill="none"/>
+    <circle cx="256" cy="260" r="6" fill="#ff4444"/>
+    <!-- Crosshair lines -->
+    <line x1="256" y1="190" x2="256" y2="220"/>
+    <line x1="256" y1="300" x2="256" y2="330"/>
+    <line x1="186" y1="260" x2="216" y2="260"/>
+    <line x1="296" y1="260" x2="326" y2="260"/>
+  </g>
+
+  <!-- AI brain / neural connection nodes inside shield -->
+  <g fill="#ff6b6b" opacity="0.6">
+    <circle cx="230" cy="205" r="4"/>
+    <circle cx="282" cy="205" r="4"/>
+    <circle cx="210" cy="240" r="3"/>
+    <circle cx="302" cy="240" r="3"/>
+    <circle cx="220" cy="310" r="3"/>
+    <circle cx="292" cy="310" r="3"/>
+    <circle cx="256" cy="340" r="4"/>
+  </g>
+  <g stroke="#ff4444" stroke-width="1" opacity="0.3">
+    <line x1="230" y1="205" x2="282" y2="205"/>
+    <line x1="230" y1="205" x2="210" y2="240"/>
+    <line x1="282" y1="205" x2="302" y2="240"/>
+    <line x1="210" y1="240" x2="220" y2="310"/>
+    <line x1="302" y1="240" x2="292" y2="310"/>
+    <line x1="220" y1="310" x2="256" y2="340"/>
+    <line x1="292" y1="310" x2="256" y2="340"/>
+    <line x1="210" y1="240" x2="256" y2="260"/>
+    <line x1="302" y1="240" x2="256" y2="260"/>
+  </g>
+
+  <!-- "MCP" text at bottom of shield -->
+  <text x="256" y="390" font-family="'Segoe UI', Arial, sans-serif" font-size="22" font-weight="700" 
+        fill="#ff4444" text-anchor="middle" letter-spacing="6" filter="url(#glow)">MCP</text>
+
+  <!-- Binary data stream decoration -->
+  <g font-family="monospace" font-size="9" fill="#ff4444" opacity="0.15">
+    <text x="85" y="150">10110</text>
+    <text x="390" y="155">01101</text>
+    <text x="70" y="370">11001</text>
+    <text x="400" y="365">10010</text>
+    <text x="170" y="80">0xDEAD</text>
+    <text x="310" y="80">0xBEEF</text>
+    <text x="150" y="440">0xC0DE</text>
+    <text x="320" y="440">0xHACK</text>
+  </g>
+
+  <!-- Rotating scanner sweep (static representation) -->
+  <path d="M256,260 L256,190 A70,70 0 0,1 306,230 Z" fill="#ff4444" opacity="0.06"/>
+</svg>
