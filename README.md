@@ -202,10 +202,29 @@ Settings → Features → MCP Servers → Add:
 
 ### Step 4: Test
 
+> ⚠️ **Must run inside the Python virtual environment!** If you see `ModuleNotFoundError: No module named 'mcp'`, activate your venv first.
+
 ```bash
-# Start MCP Inspector
+# Make sure venv is activated (you should see (venv) in your prompt)
 mcp dev server.py
 ```
+
+Successful output:
+```
+Starting MCP inspector...
+⚙️ Proxy server listening on localhost:6277
+🚀 MCP Inspector is up and running at:
+   http://localhost:6274/?MCP_PROXY_AUTH_TOKEN=...
+🌐 Opening browser...
+```
+
+Open the Inspector URL, enter your venv Python path as Command and `server.py` as Arguments, click **Connect** to see all tools loaded:
+
+<div align="center">
+<img src="assets/mcp_inspector_tools.png" alt="MCP Inspector Connected" width="700"/>
+
+*↑ MCP Inspector connected — all 14 tools loaded including Playwright browser tool*
+</div>
 
 Then tell your AI: *"Scan the 192.168.1.0/24 network for live Windows hosts and identify open services."*
 
@@ -518,10 +537,29 @@ Linux 用户：将 `Scripts/python.exe` 替换为 `bin/python3`
 
 ### 第四步：测试
 
+> ⚠️ **必须在 Python 虚拟环境中运行！** 如果报错 `ModuleNotFoundError: No module named 'mcp'`，请先激活虚拟环境。
+
 ```bash
-# 启动 MCP Inspector 调试模式
+# 确保已激活虚拟环境（提示符前应显示 (venv)）
 mcp dev server.py
 ```
+
+成功输出：
+```
+Starting MCP inspector...
+⚙️ Proxy server listening on localhost:6277
+🚀 MCP Inspector is up and running at:
+   http://localhost:6274/?MCP_PROXY_AUTH_TOKEN=...
+🌐 Opening browser...
+```
+
+打开 Inspector 网址，填入虚拟环境的 Python 路径为 Command，`server.py` 路径为 Arguments，点击 **Connect** 即可看到所有工具已加载：
+
+<div align="center">
+<img src="assets/mcp_inspector_tools.png" alt="MCP Inspector 运行成功截图" width="700"/>
+
+*↑ MCP Inspector 连接成功，显示全部 14 个工具已加载（包含 Playwright 浏览器工具）*
+</div>
 
 然后对 AI 说：*"扫描 192.168.1.0/24 网段，发现所有 Windows 主机并识别开放服务。"*
 

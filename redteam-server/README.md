@@ -37,11 +37,43 @@ python install_tools.py
 请按 `Win + S` 搜索“环境变量”，将其加入系统的 `PATH` 路径中。重启终端或电脑。
 
 ### 第四步：测试 MCP Server 是否可用
-确保激活在虚拟环境中，在命令行输入以下命令以 Inspector 调试模式（会提供一个本地调试网页）启动 MCP Server：
+
+> ⚠️ **重要：以下命令必须在 Python 虚拟环境中运行！**  
+> 如果你看到 `ModuleNotFoundError: No module named 'mcp'` 类似报错，请确认已激活虚拟环境（终端提示符前出现 `(venv)` 字样）。
+
 ```bash
+# ① 先确保已激活虚拟环境
+# Windows CMD:
+venv\Scripts\activate.bat
+# Windows PowerShell:
+.\venv\Scripts\Activate.ps1
+# Linux/macOS:
+source venv/bin/activate
+
+# ② 启动 MCP Inspector 调试模式
 mcp dev server.py
 ```
-如果在终端输出 `MCP Inspector is ready` 或者提供了一个 `http://localhost:5173` 的链接，你的机器大功告成！
+
+如果在终端输出以下内容，说明启动成功：
+
+```
+Starting MCP inspector...
+⚙️ Proxy server listening on localhost:6277
+🔑 Session token: xxxxxxxx...
+🚀 MCP Inspector is up and running at:
+   http://localhost:6274/?MCP_PROXY_AUTH_TOKEN=xxxxxxxx...
+🌐 Opening browser...
+```
+
+浏览器会自动打开 MCP Inspector 网页。在左侧填入 Command（虚拟环境的 python.exe 路径）和 Arguments（server.py 路径）后点击 **Connect**，即可看到所有工具已成功加载：
+
+<div align="center">
+<img src="../assets/mcp_inspector_tools.png" alt="MCP Inspector 运行成功截图" width="700"/>
+
+*↑ MCP Inspector 连接成功，显示全部 14 个工具已加载（包含 Playwright 浏览器工具）*
+</div>
+
+然后对 AI 说：*"扫描 192.168.1.0/24 网段，发现所有 Windows 主机并识别开放服务。"*
 
 ---
 
