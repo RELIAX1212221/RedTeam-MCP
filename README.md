@@ -29,7 +29,9 @@
 
 ## 📖 Overview
 
-**RedTeam-MCP** is an AI red team automation framework built on the [Model Context Protocol (MCP)](https://modelcontextprotocol.io). It wraps **15+ mainstream offensive security tools** into standardized interfaces that any LLM can invoke directly.
+**RedTeam-MCP** is an AI red team automation framework built on the [Model Context Protocol (MCP)](https://modelcontextprotocol.io). It wraps **16+ mainstream offensive security tools** into standardized interfaces that any LLM can invoke directly.
+
+**Keywords / Tags**: `Red Team`, `Penetration Testing`, `MCP Server`, `AI Security`, `Claude MCP Tool`, `Active Directory Pentest`, `Vulnerability Scanner`, `Autonomous LLM Agent`, `fscan`, `nuclei`, `impacket`, `playwright`.
 
 With it, Claude / GPT / any MCP-compatible LLM can:
 
@@ -363,7 +365,9 @@ Distributed under the MIT License. See [LICENSE](LICENSE) for more information.
 
 ## 📖 概述
 
-**RedTeam-MCP** 是一个基于 [Model Context Protocol (MCP)](https://modelcontextprotocol.io) 的 **AI 红队自动化框架**，将 15+ 款主流渗透测试工具封装为 AI 可直接调用的标准化接口。
+**RedTeam-MCP** 是一个基于 [Model Context Protocol (MCP)](https://modelcontextprotocol.io) 的 **AI 红队自动化与内网渗透框架**，将 16+ 款主流渗透测试与漏洞扫描工具封装为大语言模型 (LLM) 可直接调用的标准化接口。
+
+**搜索关键词**: `MCP 插件`, `AI 渗透测试`, `自动化红队工具`, `内网资产发现`, `域提权`, `Claude MCP Server`, `fscan`, `Impacket`, `gogo`, `Cursor MCP 配置`。
 
 通过它，Claude / GPT / 任何 MCP 兼容大模型能够：
 
